@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
     <title>Story Page</title>
     <style>
-       body {
+        body {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -25,33 +25,41 @@
             justify-content: space-between;
             width: 100%; /* Occupy the full width of the main container */
             padding: 20px; /* Adjust padding as needed */
+            box-sizing: border-box; /* Include padding in width calculation */
+            margin-bottom: 100px;
         }
 
         #text-container {
             flex: 1;
-            padding: 20px;
-            max-width: 60%; /* Adjust the maximum width of the text container */
+            max-width: 50%; /* Adjust the maximum width of the text container */
+            box-sizing: border-box; /* Include padding in width calculation */
         }
 
         #moral {
             flex: 1;
-            padding: 20px;
-            max-width: 60%; /* Adjust the maximum width of the text container */
+            max-width: 50%; /* Adjust the maximum width of the moral container */
+            box-sizing: border-box; /* Include padding in width calculation */
         }
 
         #image-container {
-            flex: 1;
-            max-width: 40%;
+            max-width: 50%;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
             align-items: center;
+            margin-right: 250px;
         }
 
         #image-container img {
-            max-width: 50%;
+            max-width: 70%;
             height: auto;
             margin-bottom: 10px;
+            display: block;
+
+        }
+
+        #get-images-button {
+            width: 150px; /* Add margin to the button for spacing */
+            height: 20px;
         }
     </style>
 </head>
@@ -60,14 +68,13 @@
         <h1>Dyslexia Helper</h1>
         <p>Empowering individuals with dyslexia through support and resources.</p>
     </header>
-    <h2>The Crow and The Pitcher </h2>
+    <h2>The Crow and The Pitcher</h2>
     <main>
         <div id="text-and-images-container">
             <div id="story">
+                <button id="get-images-button" onclick="getImages()">Get Related Images</button>
                 <div id="text-container">
                     <!-- Your story text goes here -->
-                    <button id="get-images-button">Get Related Images</button>
-        
                     <p>
                         A Crow, half-dead with thirst, came upon a Pitcher which had
                         once been full of water; but when the Crow put its beak into the
