@@ -4,7 +4,6 @@ import math
 from nltk.tokenize import sent_tokenize
 
 nltk.download('punkt')
-secret = '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'
 openai.api_key = secret
 
 def extract_topics(text, num_of_sentences):
