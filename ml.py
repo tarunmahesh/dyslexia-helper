@@ -4,7 +4,7 @@ import math
 from nltk.tokenize import sent_tokenize
 
 nltk.download('punkt')
-secret = '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'
+secret = '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'
 openai.api_key = secret
 
 def extract_topics(text, num_of_sentences):
@@ -36,6 +36,6 @@ def create_image(prompt):
 
 def get_pictures(text):
     img_list = []
-    for topic in extract_topics(text, math.ceil(len(sent_tokenize(text))/3)):
+    for topic in extract_topics(text, math.ceil(len(sent_tokenize(text))/5)):
         img_list.append(create_image(create_prompt(topic)))
     return img_list
