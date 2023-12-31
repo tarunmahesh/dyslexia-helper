@@ -6,6 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
     <title>Dyslexia Helper</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        header {
+            padding: 20px;
+        }
+
+        .main-content {
+            padding: 20px;
+            margin-bottom: 20px; /* Add margin at the bottom of the main content */
+            flex: 1; /* Expand to fill available space */
+            box-sizing: border-box; /* Include padding in height calculation */
+        }
+
+        button {
+            margin-top: 20px; /* Add margin to the button for spacing */
+            margin-bottom: 100px;
+        }
+
+        footer {
+            padding: 20px;
+            box-sizing: border-box; /* Include padding in height calculation */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,7 +42,7 @@
         <p>Empowering individuals with dyslexia through support and resources.</p>
     </header>
 
-    <section class="main-content">
+    <div class="main-content">
         <h2>Welcome to Dyslexia Helper!</h2>
         <p>
             Dyslexia is a neurological condition that affects the way individuals process written language, leading to difficulties in reading, spelling, and writing, despite having average to above-average intelligence. People with dyslexia may face challenges in recognizing and decoding words, often experiencing difficulties with phonological processing. Dyslexia is a lifelong condition, but with appropriate support and interventions, individuals can develop strategies to cope with its impact.
@@ -21,7 +50,7 @@
         <p>
             In the context of this website, dedicated efforts are made to enhance accessibility and user experience for individuals with dyslexia. The platform employs dyslexia-friendly fonts, clear and concise formatting, and audio features to accommodate diverse learning styles and preferences. By prioritizing inclusivity and considering the needs of users with dyslexia, this website aims to create a more welcoming and accessible digital environment, fostering a sense of empowerment and equal participation for all users, regardless of their reading challenges.
         </p>
-    </section>
+    </div>
 
     <button type="button" onclick="window.location.href='/story'">
         <img src="{{ url_for('static', filename='crow_pitcher_img.jpg') }}" alt="Button Image">
