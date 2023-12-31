@@ -1,0 +1,114 @@
+<!-- templates/story.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+    <title>Story Page</title>
+    <style>
+       body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+        }
+
+        #text-and-images-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 100%; /* Occupy the full width of the main container */
+            padding: 20px; /* Adjust padding as needed */
+        }
+
+        #text-container {
+            flex: 1;
+            padding: 20px;
+            max-width: 60%; /* Adjust the maximum width of the text container */
+        }
+
+        #moral {
+            flex: 1;
+            padding: 20px;
+            max-width: 60%; /* Adjust the maximum width of the text container */
+        }
+
+        #image-container {
+            flex: 1;
+            max-width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #image-container img {
+            max-width: 50%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dyslexia Helper</h1>
+        <p>Empowering individuals with dyslexia through support and resources.</p>
+    </header>
+    <h2>The Crow and The Pitcher </h2>
+    <main>
+        <div id="text-and-images-container">
+            <div id="story">
+                <div id="text-container">
+                    <!-- Your story text goes here -->
+                    <button id="get-images-button">Get Related Images</button>
+        
+                    <p>
+                        A Crow, half-dead with thirst, came upon a Pitcher which had
+                        once been full of water; but when the Crow put its beak into the
+                        mouth of the Pitcher he found that only very little water was left
+                        in it, and that he could not reach far enough down to get at it. 
+                    </p>
+                    <p>
+                        He tried, and he tried, but at last had to give up in despair. Then
+                        a thought came to him, and he took a pebble and dropped it into the Pitcher.
+                    </p>
+                    <p>
+                        Then he took another pebble and dropped it into
+                        the Pitcher. Then he took another pebble and dropped that into
+                        the Pitcher. Then he took another pebble and dropped that into
+                        the Pitcher. Then he took another pebble and dropped that into
+                        the Pitcher. Then he took another pebble and dropped that into
+                        the Pitcher. At last, at last, he saw the water mount up near him,
+                        and after casting in a few more pebbles he was able to quench his
+                        thirst and save his life.
+                    </p>
+                    
+                    <!-- ... (remaining story content) ... -->
+                    
+                </div>
+                <div id="moral">
+                    <p>
+                        Moral of the story: Little by little does the trick.
+                    </p>
+                </div>
+            </div>
+            
+            <div id="image-container"></div>
+        </div>
+    </main>
+    
+    
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <footer>
+        <p>&copy; 2023 Dyslexia Helper. All rights reserved.</p>
+    </footer>
+</body>
+</html>
