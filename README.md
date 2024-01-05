@@ -1,2 +1,8 @@
 # Dyslexia Helper
-## The purpose of this website is to use state-of-the-art models like GPT-3 and Dall-E 2 to automatically generate images that support a story. This is meant to help people that have dyslexia by providing an easy-to-understand visual component to assist their reading comprehension.
+
+#### Step 1: Upload all of the files to VSCode
+#### Step 2: Press Run --> Run without Debugging
+#### Step 3: In the terminal, type python app.py and press Enter
+#### Step 4: Click the link that looks like "http://192.168.2.182:5000" in the terminal
+
+## You should now be able to access the website
