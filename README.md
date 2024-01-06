@@ -18,7 +18,7 @@
 
 #### **What I learned**: This is my first time using the ChatGPT and Dall-E 2 API, so I learned a lot about how it is implement and how to prompt these APIs to get exactly what I needed.
 
-#### **What's next for Word Canvas**: In the future, I plan to make a database where people can log in and have an account for this website. They should be able to download their own text as a pdf, and the website should be able to read it and set up a page for it.
+#### **What's** next for Word **Canvas**: In the future, I plan to make a database where people can log in and have an account for this website. They should be able to download their own text as a pdf, and the website should be able to read it and set up a page for it.
 
 
 
