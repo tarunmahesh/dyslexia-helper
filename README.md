@@ -1,4 +1,4 @@
-# Dyslexia Helper
+# Word Canvas
 
 #### Step 1: Follow the instructions on the following website to create a ChatGPT API Key: https://www.merge.dev/blog/chatgpt-api-key
 #### Step 2: In the ml.py file, replace the word secret with your API Key
